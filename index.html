@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="container" class="w-screen h-screen bg-gradient-to-bl from-purple-300 to-blue-200 flex justify-center items-center">
+      <form id="sign-in-form" class="bg-white rounded-lg px-8 py-12 flex flex-col justify-center items-start gap-10 max-w-[375px] w-full">
+        <h1 class="text-center text-5xl w-full" id="title">登入</h1>
+        <label for="addr" class="w-full relative">
+          <input type="text" id="addr" name="addr" class="w-full pt-2 pb-1 pr-2 outline-none border-b-[1px] border-sky-400 focus:border-b-2 bg-transparent peer">
+          <p id="addr-hint-text" class="absolute top-2 select-none cursor-text peer-focus:-translate-y-5 duration-200 peer-focus:text-xs peer-focus:text-sky-600">帳號</p>
+        </label>
+         <label for="password" class="w-full relative">
+           <input type="password" id="password" name="password" class="w-full pt-2 pb-1 pr-2 outline-none border-b-[1px] border-sky-400 focus:border-b-2 bg-transparent peer">
+          <p id="password-hint-text" class="absolute top-2 select-none cursor-text peer-focus:-translate-y-5 duration-200 peer-focus:text-xs peer-focus:text-sky-600">密碼</p>
+        </label>
+        <a id="forget-pwd" href="" class="text-sky-400 hover:border-b-2 hover:border-sky-400 hover:font-bold">忘記密碼</a>
+        <button class="w-full py-2 text-center bg-blue-400 text-white text-lg" id="sign-in-submit">登入</button>
+      </form>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
